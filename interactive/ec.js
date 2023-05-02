@@ -8,6 +8,7 @@
     var colors = {
         red: "#cb4b4b",
         yellow: "#edc240",
+        green: "#40a440",
         blue: "#afd8f8",
     };
 
@@ -1532,6 +1533,12 @@
             });
         }
 
+        var linePoints = this.getLinePoints( this.q, this.q );
+        data.push({
+            color: colors.green,
+            data: linePoints,
+            lines: { show: true }
+        });
         return data;
     };
 
